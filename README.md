@@ -24,7 +24,7 @@ rm -rf rpt/ letters/ digits/ phonetic/
 systemctl restart asterisk
 ```
 
-Pliki zostały zrobione przy pomocy [piper-tts](https://github.com/OHF-Voice/piper1-gpl) z modelem głosowym [pl_PL-zenski_wg_glos-medium.onnx
+Pliki zostały zrobione przy pomocy [piper-tts](https://github.com/rhasspy/piper) z modelem głosowym [pl_PL-zenski_wg_glos-medium.onnx
 ](https://huggingface.co/WitoldG/polish_piper_models/tree/main)
 
 Jeśli chcesz poprawić jakiś plik, należy zrobić:
