@@ -13,6 +13,14 @@ git clone https://github.com/radioprj/ASL-sound-pl.git
 chown -R asl:asl rpt/ letters/ digits/ phonetic/
 systemctl restart asterisk
 ```
+**AKTUALIZACJA**
+
+```
+sudo -s
+cd /usr/local/share/asterisk/sounds
+git push
+```
+
 Jeśli nie spodobały Ci się wersje polskie i chcesz wrócić do oryginalnych wystarczy że usuniesz
 Pliki polskie i będziesz używał oryginalne:
 
@@ -23,6 +31,7 @@ cd /usr/local/share/asterisk/sounds/
 rm -rf rpt/ letters/ digits/ phonetic/
 systemctl restart asterisk
 ```
+
 
 Pliki zostały zrobione przy pomocy [piper-tts](https://github.com/rhasspy/piper) z modelem głosowym [pl_PL-zenski_wg_glos-medium.onnx
 ](https://huggingface.co/WitoldG/polish_piper_models/tree/main)
