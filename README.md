@@ -25,6 +25,7 @@ Jeśli nie spodobały Ci się wersje polskie i chcesz wrócić do oryginalnych w
 Pliki polskie i będziesz używał oryginalne:
 
 **USUWANIE**
+
 ```
 sudo -s
 cd /usr/local/share/asterisk/sounds/
