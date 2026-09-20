@@ -22,7 +22,7 @@ git pull origin main
 ```
 
 Jeśli nie spodobały Ci się wersje polskie i chcesz wrócić do oryginalnych wystarczy że usuniesz
-Pliki polskie i będziesz używał oryginalne:
+pliki polskie i będziesz używał oryginalne:
 
 **USUWANIE**
 
