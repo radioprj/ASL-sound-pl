@@ -18,7 +18,7 @@ systemctl restart asterisk
 ```
 sudo -s
 cd /usr/local/share/asterisk/sounds
-git push
+git pull origin main
 ```
 
 Jeśli nie spodobały Ci się wersje polskie i chcesz wrócić do oryginalnych wystarczy że usuniesz
