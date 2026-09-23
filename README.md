@@ -8,8 +8,12 @@ zamiast oryginalnych
 ```
 sudo -s
 apt install -y git
-cd /usr/local/share/asterisk/sounds
+cd /tmp
 git clone https://github.com/radioprj/ASL-sound-pl.git
+cd ASL-sound-pl
+mv * /usr/local/share/asterisk/sounds
+mv .git /usr/local/share/asterisk/sounds
+cd /usr/local/share/asterisk/sounds
 chown -R asl:asl rpt/ letters/ digits/ phonetic/
 systemctl restart asterisk
 ```
