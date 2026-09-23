@@ -11,18 +11,21 @@ apt install -y git
 cd /tmp
 git clone https://github.com/radioprj/ASL-sound-pl.git
 cd ASL-sound-pl
-mv * /usr/local/share/asterisk/sounds
-mv .git /usr/local/share/asterisk/sounds
-cd /usr/local/share/asterisk/sounds
-chown -R asl:asl rpt/ letters/ digits/ phonetic/
+rsync -av --exclude='.git*' ./ /usr/local/share/astersk/sounds/
+cd /usr/local/share/asterisk/
+chown -R asl:asl sounds/
 systemctl restart asterisk
 ```
 **AKTUALIZACJA**
 
 ```
 sudo -s
-cd /usr/local/share/asterisk/sounds
-git pull origin main
+cd /tmp
+git clone https://github.com/radioprj/ASL-sound-pl.git
+cd ASL-sound-pl
+rsync -av --exclude='.git*' ./ /usr/local/share/astersk/sounds/
+cd /usr/local/share/asterisk/
+chown -R asl:asl sounds/
 ```
 
 Jeśli nie spodobały Ci się wersje polskie i chcesz wrócić do oryginalnych wystarczy że usuniesz
