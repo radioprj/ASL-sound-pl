@@ -40,6 +40,11 @@ rm -rf rpt/ letters/ digits/ phonetic/
 systemctl restart asterisk
 ```
 
+Pliki dźwiękowe  PL możesz wykorzystać także z różnymi skryptami i modyfikacjami **asl-utils**:
+
+https://github.com/radioprj/asl-utils
+
+-----------------------------------------
 
 Pliki zostały zrobione przy pomocy [piper-tts](https://github.com/rhasspy/piper) z modelem głosowym [pl_PL-zenski_wg_glos-medium.onnx
 ](https://huggingface.co/WitoldG/polish_piper_models/tree/main)
